@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- webpage metadata -->
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script type="text/javascript">
+            currentPage = "Home";
+        </script>
+        <!-- end of webpage metadata -->
+        
+        <!-- JQuery --><script src="jquery/jquery-3.1.1.min.js"></script>
+        
+        <!-- Bootstrap CSS sheets -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        <!-- end of Bootstrap CSS sheets -->
+        
+        <!-- personalized head information -->
+        <title id="webTitle">PhotoShop Powertool - College</title><!-- never use a minus sign here! this will cause the title feature to break the name -->
+        <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+        <script type="text/javascript">//<!-- disabling this script will simply remove the feature tha customizes the title bar -->
+            webTitle.innerText = webTitle.innerText + " - ";
+            var titles = ["Calamvale", "Community", "College"] //using a minus symbol should be safe
+            function infoTyper() { //function for choosing a title from the list
+                var stageOne = Math.floor(titles.length * Math.random());
+                return titles[stageOne];
+            }
+            setInterval(function() {
+                webTitle.innerText = webTitle.innerText.slice(0,webTitle.innerText.search("-")+2) + infoTyper()
+            },1000)
+        </script>
+        <script src="directory.js"></script>
+        <!-- end of personalized head information -->
+    </head>
+    <body style="background-image: linear-gradient(to right,navy,teal,teal,teal,teal,teal,teal,teal,teal,navy);">
+        <!-- navigation bar -->
+        <nav class="navbar navbar-inverse navbar-fixed-top" style="border-bottom: navy; background-image: linear-gradient(to bottom,#800000,#800000,#800000,#800000,transparent 100%),linear-gradient(to right,navy,teal,teal,teal,teal,teal,teal,teal,teal,navy);">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Calamvale Community College</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="index.html">Calamvale Community College</a>
+                </div>
+                <div id="navbar" class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav" id="navigationBar">
+                        <li class="active"><a href="#" onclick="window.pageDirectory.openPage('Home')" style="background-image: linear-gradient(to bottom,#A52A2A,#A52A2A,#A52A2A,#A52A2A,teal);">Home</a></li>
+                        <li><a href="#" onclick="window.pageDirectory.openPage('Disclaimer')">Disclaimer</a></li>
+                        <li><a href="#" onclick="window.pageDirectory.openPage('About')">About</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- end of navigation bar -->
+        
+        <!-- content -->
+        <div class="container theme-showcase" role="main">
+            <div class="jumbotron" style="text-align: center; background-color: inherit;" id="windowContent" onload="pageDirectory.openPage();">
+                <h1>PhotoShop Powertool</h1>
+                <table align="center">
+                    <tr style="text-align: inherit; font-size: 20px;">
+                        <th style="text-align: inherit;">Before</th>
+                        <th style="text-align: inherit; width:480px;">Process</th> 
+                        <th style="text-align: inherit;">After</th>
+                    </tr>
+                    <tr style="text-align: inherit;">
+                        <td style="text-align: inherit;"><b><br>Image 1</b></img></td>
+                        <td style="text-align: inherit;"><b><br>Image 1</b></img></td>
+                        <td style="text-align: inherit;"><b><br>Image 1</b></img></td>
+                    </tr>
+                    <tr style="text-align: inherit;">
+                        <td style="text-align: inherit;"><img src="media/image1before.JPG" width="240px"></img></td>
+                        <td width="480px" style="text-align: inherit; width: 480px;">What took place in this image was: first I did...</td> 
+                        <td style="text-align: inherit;"><img src="media/image1after.JPG" width="240px"></img></td>
+                    </tr>
+                    <tr style="text-align: inherit;">
+                        <td style="text-align: inherit;"><b><br>Image 2</b></img></td>
+                        <td style="text-align: inherit;"><b><br>Image 2</b></img></td>
+                        <td style="text-align: inherit;"><b><br>Image 2</b></img></td>
+                    </tr>
+                    <tr style="text-align: inherit;">
+                        <td style="text-align: inherit;"><img src="media/image2before.JPG" width="240px"></img></td>
+                        <td width="480px" style="text-align: inherit; width: 480px;">What took place in this image was: first I did...</td> 
+                        <td style="text-align: inherit;"><img src="media/image2after.JPG" width="240px"></img></td>
+                    </tr>
+                    <tr style="text-align: inherit;">
+                        <td style="text-align: inherit;"><b><br>Image 3</b></img></td>
+                        <td style="text-align: inherit;"><b><br>Image 3</b></img></td>
+                        <td style="text-align: inherit;"><b><br>Image 3</b></img></td>
+                    </tr>
+                    <tr style="text-align: inherit;">
+                        <td style="text-align: inherit;"><img src="media/image3before.JPG" width="240px"></img></td>
+                        <td width="480px" style="text-align: inherit; width: 480px;">What took place in this image was: first I did...</td> 
+                        <td style="text-align: inherit;"><img src="media/image3after.JPG" width="240px"></img></td>
+                    </tr>
+                </table>
+                <br>
+            </div>
+        </div>
+        <!-- end of contents -->
+    </body>
+</html>
