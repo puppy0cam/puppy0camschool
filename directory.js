@@ -13,6 +13,9 @@ function wrapper(context){
             "About": {
                 "index": "#"
             },
+            "Contact Us": {
+                "index": "#"
+            },
             "media": {
                 "index": "#",
                 "image1before": "#",
@@ -32,6 +35,9 @@ function wrapper(context){
             },
             "About": {
                 "index": "\r\n        <h1>About Us</h1>\r\n        <p>Calamvale Community College is a P-12 Independent State School established in 2001.</p>\r\n        <p>It is divided into two sub-schools – Junior and Secondary.</p>\r\n        <p>Each has a separate principal and teaching staff, along with a college principal to lead the rest of the school</p>"
+            },
+            "Contact Us": {
+                "index": "\r\n        <a style=\"font-size: 16px; color: black;\" href=\"mailto:admin@calamvale.com?subject=Enquiry&body=-%7C-%7C-%7C-%7C-%7C-%7C-%7C-%7C-%7C-%7C-%7C-%7C-%7C-%7C-%7C-%7C-%7C-%7C-%7C-%7C-%7C-%7C-%7C-%7C-%7C-%7C-%7C-%7C%0A%0A-%7C-%7C-%7C-%7C-%7C-%7C-%7C-%7C-%7C-%7C-%7C-%7C-%7C-%7C-%7C-%7C-%7C-%7C-%7C-%7C-%7C-%7C-%7C-%7C-%7C-%7C-%7C-%7C\">Click Here to Contact Us at admin@calamvale.com</a><br><br><br><br><br><iframe src=\"https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7069.925288433107!2d153.04378570424464!3d-27.625673580158594!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x5d9dd8c4a8b90b!2sCalamvale+Community+College!5e0!3m2!1sen!2sau!4v1503016372657\" width=\"800\" height=\"600\" frameborder=\"0\" style=\"border:0\" allowfullscreen></iframe>"
             },
             "media": {
                 "image1before": "\r\n        <img src=\"media/image1before.JPG\" href=\"#\" onclick=\"pageDirectory.openPage('Home');\"></img>",
