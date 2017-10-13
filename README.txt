@@ -1,0 +1,2 @@
+all pages except for Contact Us will work offline.
+for faster load time you will want to open the index.min.html while if you want to actually be able to read the code, then go into the regular files that are not .min
